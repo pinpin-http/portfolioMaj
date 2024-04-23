@@ -1,0 +1,103 @@
+{
+    "basics": {
+        "name": "Bouazzaoui Soheib",
+        "label": "Étudiant en informatique",
+        "email": "bouazzaoui.soheib.pro@gmail.com",
+        "phone": "+33 6 52 60 40 44",
+        "picture": "",
+        "x_title": "Bonjour je suis",
+        "job1": "Étudiant",
+        "job2": " Développeur ",
+        "description": "Bonjour, je m'apelle Bouazzaoui Soheib et je suis un étudiant en BUT2 informatique passionné par la tech et la cybersécuritée",
+        "summary": "je suis à l'IUT de villetaneuse, en France",
+        "keywords": "personal,website,portfolio,template,kit,Bouazzaoui,soheib,pinpin,php, Android,Kotlin,Java,cybersécurité,webdev,web,developer,etudiant,france,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
+        "url": "https://bouazzaouisoheib.site",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "",
+            "country": "",
+            "countryCode": "FR",
+            "region": ""
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "bouazzaoui.soheib.pro@gmail.com",
+                "url": "mailto:bouazzaoui.soheib.pro@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Bouazzaoui Soheib",
+                "url": "https://www.linkedin.com/in/soheib-bouazzaoui/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "FAILED : Connection refused",
+                "url": "https://github.com/ryujin8sama",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "Telegram",
+                "username": "Bouazzaoui Soheib",
+                "url": "https://t.me/BouazzaouiSoheib",
+                "x_icon": "fab fa-telegram-plane"
+            },
+            {
+                "network": "Discord",
+                "username": "468512909916504065",
+                "url": "https://discord.com",
+                "x_icon": "fab fa-discord"
+            }
+        ]
+    },
+    "work": [
+    
+    ],
+    "volunteer": [
+       
+    ],
+    "education": [
+        
+    ],
+    "awards": [
+        
+    ],
+    "publications": [
+      
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "BUT2",
+            "keywords": ["HTML","PHP","Linux","Bash", "CSS", "Javascript","Kotlin","java","Python"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Français",
+            "fluency": "Natif"
+        },
+        {
+            "language": "Anglais",
+            "fluency": "Courant"
+        },
+        {
+            "language": "Arabe",
+            "fluency": "Courant"
+        }
+    ],
+    "interests": [
+        {
+            "name": "",
+            "keywords": ["Chats", "gaming",""]
+        }
+    ],
+    "references": [
+        {
+            
+        }
+    ]
+}
