@@ -69,8 +69,8 @@ export const Works = () => {
     { 
       id: 5,
       title: 'Donut C', 
-      description: `Réalisation du défi : "make the donut" organisé par des eleves de l'université qui consite a reproduire le donut rotatif developpé en C. Le defi demande des connaissances en mathématiques et des connaissances en C solide. Le but était de mettre en pratique les competences enseigné au deuxieme semestre de la formation.`,
-      precision:'blabla',
+      description: `Un donut rotatif codé en C`,
+      precision:`Réalisation du défi : "make the donut" organisé par des eleves de l'université qui consite a reproduire le donut rotatif developpé en C. Le defi demande des connaissances en mathématiques et des connaissances en C solide. Le but était de mettre en pratique les competences enseigné au deuxieme semestre de la formation.`,
       alter: 'Dooooooooonut',
       images: [Lacalle, Laravel],
     },
@@ -108,39 +108,79 @@ export const Works = () => {
               <h3 className="title">
                 <TextDecrypt text={project.id + '. ' + project.title} />
               </h3>
-              <p className="description">
+              <p className="description" style={{ alignSelf: 'center', width: '100%', textAlign: 'center' }}>
                 {project.description}
               </p>
             </div>
           </div>
         ))}
         {selectedProject && (
-          <Modal 
-            isOpen={modalIsOpen} 
-            onRequestClose={closeModal}
-            style={{
-              content: {
-                width: '80%',
-                height: '80%',
-                margin: 'auto',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center'
-              }
-            }}
-          >
-            <h2>{selectedProject.title}</h2>
-            <Carousel showThumbs={false} useKeyboardArrows={true}>
-              {selectedProject.images.map((image, index) => (
-                <div key={index}>
-                  <img src={image} alt={`${selectedProject.alter} ${index + 1}`} style={{ maxWidth: '60%', height: 'auto' }} />
-                </div>
-              ))}
-            </Carousel>
-            <p>{selectedProject.precision}</p>
-            <p>{selectedProject.lien}</p>
-            <button onClick={closeModal}>Close Modal</button>
-          </Modal>
+          
+  <Modal 
+  isOpen={modalIsOpen} 
+  onRequestClose={closeModal}
+  style={{
+    content: {
+      width: '80%',
+      height: '80%',
+      margin: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '2em',
+      boxSizing: 'border-box',
+      background: 'rgba(255, 255, 255, 0.6)', // Légèrement transparent
+      backdropFilter: 'blur(10px)', // Ajouter un effet de flou
+      borderRadius: '16px', // Ajouter des coins arrondis
+
+    }
+  }}
+>
+  <h2 style={{ alignSelf: 'center', width: '100%', textAlign: 'center' }}>{selectedProject.title}</h2>
+  <Carousel showThumbs={false} useKeyboardArrows={true} style={{ alignSelf: 'center', width: '100%' }}>
+    {selectedProject.images.map((image, index) => (
+      <div key={index}>
+        <img src={image} alt={`${selectedProject.alter} ${index + 1}`} style={{ maxWidth: '60%', height: 'auto' }} />
+      </div>
+    ))}
+  </Carousel>
+  <div style={{ display: 'flex', width: '100%', marginTop: '1em', position: 'relative' }}>
+    <div style={{ width: '45%', paddingRight: '2.5%' }}>
+      <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Résumé</h3>
+      <p style={{ 
+        marginLeft: '5%', 
+        width: '100%', 
+        wordWrap: 'break-word', 
+        alignSelf: 'flex-start' 
+      }}>
+        {selectedProject.precision}
+      </p>
+    </div>
+    <div style={{
+      width: '1px', 
+      backgroundColor: 'black', 
+      height: '100%', 
+      position: 'absolute', 
+      left: '50%', 
+      transform: 'translateX(-50%)' 
+    }}></div>
+    <div style={{ width: '45%', paddingLeft: '2.5%' }}>
+      <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Liens et ressources</h3>
+      <p style={{ 
+        marginRight: '5%', 
+        width: '100%', 
+        wordWrap: 'break-word', 
+        textAlign: 'right',
+        alignSelf: 'flex-start' 
+      }}>
+        {selectedProject.additionalText}
+      </p>
+    </div>
+  </div>
+  <p style={{ alignSelf: 'center', width: '100%', textAlign: 'center' }}>{selectedProject.lien}</p>
+  <button style={{ alignSelf: 'center' }} onClick={closeModal}>Fermer le résumé du projet</button>
+</Modal>
+
+     
         )}
       </Container>
     </section>
