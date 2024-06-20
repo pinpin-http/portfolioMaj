@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Bonjour!";
-  const aboutme = 'Mon nom est Bouazzaoui Soheib et je suis un étudiant en informatique passionné par la cybersécuritée et la tech. Je suis constamment à la recherche de nouveaux défis, ce qui me pousse à m intéresser à un large éventail de sujets variés! Travailler sur de gros projets web en fullstack est quelque choseque j apprécie particulièrement.Je suis en train de suivre mes études en 2ème année de BUT informatique à l IUT de Villetaneuse.  ' ;
+  const aboutme = 'Mon nom est Bouazzaoui Soheib et je suis un étudiant en informatique passionné par la cybersécuritée et le web en general. Je suis constamment à la recherche de nouveaux défis, ce qui me pousse à m\'intéresser à un large éventail de sujets variés! Travailler sur de gros projets web en fullstack est quelque choseque j\'apprécie particulièrement et que j\'ai pu mettre en oeuvre ces dernieres années.Je suis actuellementen 2ème année de BUT informatique à l IUT de Villetaneuse et a la recherche d\'une alternance dans le domaine .  ' ;
 
   return (
     <section id="about">

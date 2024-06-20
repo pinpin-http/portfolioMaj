@@ -13,6 +13,7 @@ import './Works.css';
 // Import ../../assets/recentprojects/
 import Portfolio from '../../assets/recentprojects/react-portfolio.png';
 import Veritru from '../../assets/recentprojects/veritru.png';
+import auth2 from '../../assets/recentprojects/auth2.png';
 import Lofo from '../../assets/recentprojects/lofo.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
@@ -36,19 +37,28 @@ export const Works = () => {
     { 
       id: 1,
       title: 'Portfolio',
-      description: `J'ai dev une page portfolio
-      avec des animations 3D en three.js pour le
-      fond d'écran dynamique. Il permet de me presenter rapidement et de mettre en valeur mes travaux`,
+      description: `Un site personnel en ReactJS et threeJS`,
+      precision:'J\'ai dev une page portfolio avec des animations 3D en three.js pour le fond d\'écran donnant un aspect dynamique et sobre. Il permet de me presenter rapidement et de mettre en valeur les travaux et projets que j\'ai pu accomplir ces dernieres année',
+      competences:'NodeJS / ReactJS / threeJS / JS / CSS / npm',
+      complementCompetence:'J\' ai pu monter en competence dans le developpement en NodeJS ce qui m\'a permis d\'enchainer avec d\'autres projets du meme genre. Je suis passé du status de novice au status intermediaire en maitrisant les bases de cette technologie. ',
+      accomplir : 'Pour pouvoir progresser dans ce domaine, je devrais me concentrer sur les nouvelles technologies du Web en accomplissant plus de projets et en ameliorant celui-ci en le rendant plus modulaire et potentiellement ajouter une interface d\'administration pour ajouter des projets sans passer par le code .',
+      nomDuLien:'Lien vers mon portfolio',
+      liens:'https://www.bouazzaouisoheib.site/',
       alter: 'Portfolio',
-      images: [Portfolio, Veritru],
+      images: [Portfolio],
     },
     { 
       id: 2,
       title: 'Service d\'authentification',
-      description: `Un formulaire de connexion simple permettant l'accès à l'intranet de l'IUT au personnel du corps enseignant enregistré dans la base de données grâce au CAS et se connecter à un service lié.
-      Grâce à l'algorithme de cryptographie asymétrique RSA, les données sont entièrement chiffrées de bout en bout.`,
+      description: ``,
+      precision:'Un formulaire de connexion simple permettant l\'accès à l\'intranet de l\'IUT au personnel du corps enseignant enregistré dans la base de données grâce au CAS et se connecter à un service lié.Grâce à l\'algorithme de cryptographie asymétrique RSA, les données sont entièrement chiffrées de bout en bout. Le site derriere ce portail est une interface d\'administration qui permet au role administrateur de visualiser les données presente dans la BDD',
+      competences:'RSA / Figma / HTTP / TailwindCSS / PHP / OpenSSL / PostgreSQL / JS',
+      complementCompetence:' Ce projet a été un atout en terme d\'autoformation dans le domaine de la représentation de large base de données sous forme de graphiques. Il m\'a aussi Une meilleur compréhension du système d’authentification ; Une approche du design en cohérence avec le site a implémenter ; Etablir un projet from scratch en equipe',
+      accomplir:'J\'aimperai completer ce projet en utilisant un framework PHP comme Laravel ou Symfony plutot que du PHP natif ce qui me permettrai de prendre en competence dans un domaine recherché sur le marché du developpement web',
+      nomDuLien:'GitLab du projet',
+      lien:'https://gitlab.sorbonne-paris-nord.fr/12200893/app-web-hkmt',
       alter: 'CAS',
-      images: [Veritru, Lofo],
+      images: [Veritru, auth2],
     },
     { 
       id: 3,
@@ -145,7 +155,7 @@ export const Works = () => {
   </Carousel>
   <div style={{ display: 'flex', width: '100%', marginTop: '1em', position: 'relative' }}>
     <div style={{ width: '45%', paddingRight: '2.5%' }}>
-      <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Résumé</h3>
+      <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Résumé du projet</h3>
       <p style={{ 
         marginLeft: '5%', 
         width: '100%', 
@@ -153,6 +163,16 @@ export const Works = () => {
         alignSelf: 'flex-start' 
       }}>
         {selectedProject.precision}
+        <br></br>
+        <br></br>
+        Voici les competences que j'ai pu developper lors de ce projet : <strong>{selectedProject.competences}</strong>
+        <br></br>
+        <br></br>
+        <strong>Ce qu'il m'a apporté : </strong>{selectedProject.complementCompetence}
+        <br></br>
+        <br></br>
+        <strong>Angle de progression : </strong>{selectedProject.accomplir}
+
       </p>
     </div>
     <div style={{
@@ -163,16 +183,17 @@ export const Works = () => {
       left: '50%', 
       transform: 'translateX(-50%)' 
     }}></div>
+
     <div style={{ width: '45%', paddingLeft: '2.5%' }}>
       <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>Liens et ressources</h3>
       <p style={{ 
-        marginRight: '5%', 
+        marginRight: '50%', 
         width: '100%', 
         wordWrap: 'break-word', 
-        textAlign: 'right',
+        textAlign: 'center',
         alignSelf: 'flex-start' 
       }}>
-        {selectedProject.additionalText}
+        <a href= {selectedProject.liens}>{selectedProject.nomDuLien}</a>
       </p>
     </div>
   </div>
