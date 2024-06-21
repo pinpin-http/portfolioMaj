@@ -49,47 +49,68 @@ export const Works = () => {
     },
     { 
       id: 2,
-      title: 'Service d\'authentification',
-      description: ``,
-      precision:'Un formulaire de connexion simple permettant l\'accès à l\'intranet de l\'IUT au personnel du corps enseignant enregistré dans la base de données grâce au CAS et se connecter à un service lié.Grâce à l\'algorithme de cryptographie asymétrique RSA, les données sont entièrement chiffrées de bout en bout. Le site derriere ce portail est une interface d\'administration qui permet au role administrateur de visualiser les données presente dans la BDD',
+      title: 'Projet: connexion CAS et analyse visuelle de données',
+      description: `Un projet universitaire en PHP`,
+      precision:'Un projet en php visant à developper un formulaire de connexion simple permettant l\'accès à l\'intranet de l\'IUT au personnel du corps enseignant enregistré dans la base de données grâce au CAS et se connecter à un service lié.Grâce à l\'algorithme de cryptographie asymétrique RSA, les données sont entièrement chiffrées de bout en bout. Le site derriere ce portail est une interface d\'administration qui permet au role administrateur de visualiser les données presente dans la BDD',
       competences:'RSA / Figma / HTTP / TailwindCSS / PHP / OpenSSL / PostgreSQL / JS',
       complementCompetence:' Ce projet a été un atout en terme d\'autoformation dans le domaine de la représentation de large base de données sous forme de graphiques. Il m\'a aussi Une meilleur compréhension du système d’authentification ; Une approche du design en cohérence avec le site a implémenter ; Etablir un projet from scratch en equipe',
       accomplir:'J\'aimperai completer ce projet en utilisant un framework PHP comme Laravel ou Symfony plutot que du PHP natif ce qui me permettrai de prendre en competence dans un domaine recherché sur le marché du developpement web',
       nomDuLien:'GitLab du projet',
-      lien:'https://gitlab.sorbonne-paris-nord.fr/12200893/app-web-hkmt',
+      liens:'https://gitlab.sorbonne-paris-nord.fr/12200893/app-web-hkmt',
       alter: 'CAS',
       images: [Veritru, auth2],
     },
     { 
       id: 3,
       title: 'Pinpin OS',
-      description: `Le but de ce projet est de faire et de distribuer un systeme d'exploitation open source basé sur debian qui tournerai sur la switch. Le projet est build a partir du projet L4T. Le principal interet etant de faire tourner des jeux steam sur un processeur ARM. Le projet est pour le moment en phase de test .`,
-      alter: 'Projet pinpinOS',
-      lien:'https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-bionic-installation-guide',
+      description: `Un custom OS pour la switch `,
+      precision: 'Le but de ce projet est de faire et de distribuer un systeme d\'exploitation open source basé sur debian qui tournerai sur la switch. Le projet est build a partir du projet L4T. Le principal interet etant de faire tourner des jeux steam sur un processeur ARM. Le projet est pour le moment en phase de test et en privé, il sera posté sur github sous peu.',
+      competences:"Linux / Tegra / C / Bash / ",
+      complementCompetence:"Ce projet m'a permis de monter en compétence dans le domaine du bas niveau à travers la customisation du kernel et le développement de features en C. J'ai aussi pu m'améliorer en lecture de documentation lors de mes recherches sur les technologies à mettre en œuvre. ",
+      accomplir:"J'aimerai pousser le projet plus loin en le rendant public afin de collaborer, mais je dois valider mes bases solides avant. Mon objectif sur les prochains mois et de rendre le demmarage avec le custom kernel stable et avoir un systeme plus léger. ",
+      nomDuLien:"Page du projet d'origine",
+      liens:'https://wiki.switchroot.org/wiki/linux/l4t-ubuntu-bionic-installation-guide',
 
-      images: [Lofo, Startup],
+      images: [Lofo],
     },
     { 
       id: 4,
       title: 'chiffrement RSA', 
-      description: `Développement d'un système de chiffrement de mot de passe basé sur l'algorithme RSA en suivant l'approche mathématique du sujet. L'algorithme reste cependant attaquable car la génération des keys est assez faible. Ce projet avait pour but de tester les connaissances cryptographique des eleves. `,
+      description: `Un projet de cryptographie avec des outils mathématiques et du PHP`,
+      precision:"Développement d'un système de chiffrement de mot de passe basé sur l'algorithme RSA en suivant l'approche mathématique du sujet en etudiant les nombres premiers. L'algorithme reste cependant attaquable car la génération des keys est assez faible. Ce projet avait pour but de tester et pousser mes connaissances en cryptographie en abordant un protocole repandue. ",
+      competences:"PHP / PostgreSQL / RSA ",
+      complementCompetence:"À travers ce projet, j'ai pu découvrir les bases de la cryptographie en mathématique en appliquant des propriétés telles que le théorème de Fermat ou encore l'exponentiation modulaire. J'ai pu aussi pousser mes connaissances en PHP en utilisant un module de cryptographie deja implementé.",
       alter: 'RSA',
-      images: [Startup, Lacalle],
+      accomplir:"J'aimerai faire le meme type de projet avec un outil de chiffrement different, ou alors pousser ce projet la en generant les bases de mon algo aléatoirement pour avoir des clées plus solide ",
+      nomDuLien:"GitHub du projet RSA",
+      liens:"https://github.com/ryujin8sama/RSA/tree/main",
+      images: [Startup],
+      plus:"(voir github pour le code source)",
     },
     { 
       id: 5,
       title: 'Donut C', 
-      description: `Un donut rotatif codé en C`,
       precision:`Réalisation du défi : "make the donut" organisé par des eleves de l'université qui consite a reproduire le donut rotatif developpé en C. Le defi demande des connaissances en mathématiques et des connaissances en C solide. Le but était de mettre en pratique les competences enseigné au deuxieme semestre de la formation.`,
       alter: 'Dooooooooonut',
-      images: [Lacalle, Laravel],
+      nomDuLien:"Explication du fonctionnement",
+      competences:"C / asccii rendering / Maths",
+      complementCompetence:"J'ai pu m'améliorer en mathématiques et en C. La gestion de l'affichage en ASCII m'a fait comprendre des concepts innovants que je n'avais jamais utilisés auparavant.",
+      accomplir:"Le projet est clos et j'aimerai m'amuser un peu plus à développer des petits programmes du genre pour m'améliorer en bas niveau et en logique mathématique.",
+      liens:"https://www.a1k0n.net/2011/07/20/donut-math.html",
+      images: [Lacalle],
     },
     { 
       id: 6,
       title: 'Gestion projet Laravel', 
-      description: `Mise a jour d'un projet laravel de la version 6 a la version 8 et integration d'un back office avec des interactions avec la bdd en Laravel. j'ai utilisé beaucoup d'outils web rincipalement axée autour du PHP, du Laravel, de l'HTML, du CSS et du JS.   `,
+      description: `Mise à jour d'un projet Laravel et développement de features`,
+      precision: `Mise à jour d'un projet Laravel de la version 6 à la version 10 et intégration d'un back office avec des interactions avec la bdd en utilisant l'orm Eloquent. J'ai pu développer beaucoup de nouvelles features basées principalement sur du Laravel, de l'HTML, du SASS et du JS.`,
+      competences:"PHP / Laravel / Eloquent / VueJS / SASS / composer / BUN",
+      complementCompetence:"J'ai appris le fonctionnement de Laravel et de son système d'ORM. J'ai pu pour la première fois entreprendre un projet PHP à taille réelle avec un enjeu. Ce projet m'a permis de découvrir l'approche framework de PHP et les facilités qui viennent avec, étant donné que je m'étais habitué à du PHP brut.",
+      accomplir:"J'aimerai pousser ce projet plus loin afin de donner un vrai sens à mon travail et de faire valoriser mes compétences en ajoutant, entre autres, un système de forum et un outil de chatbotting intégré à la main page.",
+      nomDuLien:"(Bientot disponible)",
+      liens:'',
       alter: 'laravel',
-      images: [Laravel, Portfolio],
+      images: [Laravel],
     },
   ]);
 
@@ -173,6 +194,11 @@ export const Works = () => {
         <br></br>
         <strong>Angle de progression : </strong>{selectedProject.accomplir}
 
+        <br></br>
+        <br></br>
+        {selectedProject.plus}
+
+
       </p>
     </div>
     <div style={{
@@ -196,6 +222,7 @@ export const Works = () => {
         <a href= {selectedProject.liens}>{selectedProject.nomDuLien}</a>
       </p>
     </div>
+
   </div>
   <p style={{ alignSelf: 'center', width: '100%', textAlign: 'center' }}>{selectedProject.lien}</p>
   <button style={{ alignSelf: 'center' }} onClick={closeModal}>Fermer le résumé du projet</button>
