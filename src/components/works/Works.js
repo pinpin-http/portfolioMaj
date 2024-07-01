@@ -18,6 +18,7 @@ import Lofo from '../../assets/recentprojects/lofo.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
 import Laravel from '../../assets/recentprojects/laravel.png';
+import Django from '../../assets/recentprojects/django.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -91,6 +92,7 @@ export const Works = () => {
       id: 5,
       title: 'Donut C', 
       precision:`Réalisation du défi : "make the donut" organisé par des eleves de l'université qui consite a reproduire le donut rotatif developpé en C. Le defi demande des connaissances en mathématiques et des connaissances en C solide. Le but était de mettre en pratique les competences enseigné au deuxieme semestre de la formation.`,
+      description:"Projet de developper un donut rotatif dans un terminal en C",
       alter: 'Dooooooooonut',
       nomDuLien:"Explication du fonctionnement",
       competences:"C / asccii rendering / Maths",
@@ -111,6 +113,19 @@ export const Works = () => {
       liens:'',
       alter: 'laravel',
       images: [Laravel],
+    },
+    { 
+      id: 7,
+      title: 'Site de gestion d\'articles', 
+      description: `Site de gestion d\'articles multilangues en Django`,
+      precision: "Développement d'un site de forums permettant de poster des articles. Le projet est issu d'un test technique visant à évaluer mes compétences en Django. Le site comporte notamment un système de gestion d'utilisateurs et des fonctionnalités de traduction. ",
+      competences:"HTML / CSS / DJANGO / JS / PYTHON / SQLITE",
+      complementCompetence:"J'ai poussé mes connaissances en Django en réalisant ce défi technique en moins de 3 jours. J'ai appris à utiliser l'ORM avec SQLite en intégrant mon modèle. J'ai aussi pu me mettre à jour concernant les nouveaux protocoles de traductions de page statiques grâce au procédé i18n.",
+      accomplir:"J'aimerai pousser ce projet plus loin en ajoutant notamment un outil de chatbotting intégré à la main page et un systeme de recherche boosté par l'IA.",
+      nomDuLien:"GitHib (toutes les ressources sont dedans)",
+      liens:'https://github.com/pinpin-http/multilang_site-',
+      alter: 'django',
+      images: [Django],
     },
   ]);
 
