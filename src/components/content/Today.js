@@ -14,7 +14,7 @@ export const Today = () => {
     var days = [
       "Dimanche",
       "Lundi",
-      "Mardiy",
+      "Mardi",
       "Mercredi",
       "Jeudi",
       "Vendredi",
