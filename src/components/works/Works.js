@@ -19,6 +19,7 @@ import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
 import Laravel from '../../assets/recentprojects/laravel.png';
 import Django from '../../assets/recentprojects/django.png';
+import ia from '../../assets/recentprojects/ia.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -127,6 +128,20 @@ export const Works = () => {
       alter: 'django',
       images: [Django],
     },
+    { 
+      id: 8,
+      title: 'Création et entrainement d\'ia', 
+      description: `Développer une solution complète de prédiction de genre et d’âge avec Keras et TensorFlow, à partir du dataset UTKFace.`,
+      precision: "Développement de 4 modèles : Orraclum : Prédiction du genre| Nevula : Prédiction de l’âge | Aetheris : Prédiction simultanée du genre et de l’âge | Chronos : Transfert learning pour améliorer les performances",
+      competences:"Python / Angular / Flask / MongoDB / Tensorflow-Keras / Google Colab",
+      complementCompetence:"Création d’une application Streamlit hébergée sur Hugging Face, permettant d’utiliser les modèles via une interface interactive.",
+      accomplir:"J'aimerai pousser ce projet plus loin en ajoutant notamment un outil de chatbotting intégré à la main page et un systeme de recherche boosté par l'IA.",
+      nomDuLien:"GitHib (toutes les ressources sont dedans)",
+      liens:'https://huggingface.co/pinpin-http/keras_model_SAES5-1/tree/main',
+      alter: 'ia',
+      images: [ia],
+    },
+    
   ]);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
